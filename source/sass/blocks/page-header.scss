@@ -1,0 +1,21 @@
+.page-header {
+	background-color: #ffffff;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.page-header__logo {
+	cursor: pointer;
+}
+
+.page-header__logo-image {
+	padding: 0 20px;
+	height: 62px;
+}
+
+.page-header__logo-tablet {
+	display: none;
+}
+
+.page-header__logo-desktop {
+	display: none;
+}
