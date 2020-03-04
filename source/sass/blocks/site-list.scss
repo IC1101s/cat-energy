@@ -94,6 +94,10 @@
 }
 
 @media (min-width: $desktop-width) {
+	.site-list {
+		width: 580px;
+	}
+
 	.site-list__item {
 
 		&--active {
