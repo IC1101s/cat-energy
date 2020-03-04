@@ -1,0 +1,184 @@
+.nutrition-program {
+	background-color: #63a73a;
+	background-image:
+	  linear-gradient(to top, #ffffff 170px, transparent 170px), 
+	  url("../img/nutrition-program/index-background-mobile@1x.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% top;
+	background-size: auto, 320px;
+
+	@media (min-resolution: $resolution-dpi),
+	       (min-resolution: $resolution-dppx) {
+
+		background-image: 
+		  linear-gradient(to top, #ffffff 170px, transparent 170px),
+	  	  url("../img/nutrition-program/index-background-mobile@2x.jpg");
+	}
+}
+
+.nutrition-program__wrapper {
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px;
+
+	text-align: center;
+}
+
+.nutrition-program__title {
+	margin: 0 auto;
+	margin-bottom: 25px;
+	padding-top: 27px;
+	max-width: 350px;
+
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+.nutrition-program__text {
+	margin: 0;
+	margin-bottom: 23px;
+
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: 400;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.nutrition-program__img {
+	width: 280px;
+	height: 271px;
+}
+
+.nutrition-program__link {
+	width: 100%;
+
+	transition-property: background-color, color;
+	transition-duration: 0.05s;
+	transition-timing-function: linear;
+
+	&--top {
+		display: none;
+	}
+
+	&:focus {
+		background-color: #5eaa2f;
+	}
+
+	&:active {
+		color: rgba(255, 255, 255, 0.3);
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.nutrition-program {
+		background-image: none;
+		background-color: transparent;
+	}
+
+	.nutrition-program__wrapper {
+		padding: 0 30px;
+
+		text-align: left;
+	}
+
+	.nutrition-program__flex {
+		position: relative;
+	}
+
+	.nutrition-program__title {
+		margin: 0;
+		margin-left: 87px;
+		padding-right: 45px;
+		margin-bottom: 40px;
+		padding-top: 55px;
+		max-width: none;
+
+		font-size: 60px;
+		line-height: 60px;
+		color: #111111;
+	}
+
+	.nutrition-program__text {
+		margin-left: 88px;
+		margin-bottom: 19px;
+
+		font-size: 20px;
+		line-height: 20px;
+		color: #111111;
+	}
+
+	.nutrition-program__img {
+		width: 709px;
+		height: 609px;
+	}
+
+	.nutrition-program__link {	
+		position: absolute;
+		top: 111%; //287px
+		left: 90px;
+
+		padding: 17px 27px;
+		max-width: 247px;
+		width: auto;
+
+		font-size: 20px;
+		line-height: 20px;
+
+		&--top {
+			display: inline-block;
+		}
+
+		&--bottom {
+			display: none;
+		}
+
+		&:hover {
+			background-color: #5eaa2f;
+		}
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.nutrition-program__wrapper {
+		position: relative;
+
+		margin: 0 auto;
+		padding: 0 110px;
+		padding-bottom: 85px;
+		width: 1220px;
+	}
+
+	.nutrition-program__flex {
+		margin-left: 80px;
+		padding-top: 103px;
+		width: 420px;
+	}
+
+	.nutrition-program__title {
+		margin: 0;
+		margin-bottom: 41px;
+		padding: 0;
+	}
+
+	.nutrition-program__text {
+		margin: 0;
+		margin-bottom: 52px;
+	}
+
+	.nutrition-program__link {
+		position: static;
+	}
+
+	.nutrition-program__img {
+		position: absolute;
+		top: 23px;
+		right: 328px;
+		z-index: 3;
+
+		width: 552px;
+		height: auto;
+	}
+}
