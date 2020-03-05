@@ -1,4 +1,6 @@
 .nutrition-program {
+	margin-bottom: 22px;
+
 	background-color: #64a83b;
 	background-image:
 	  linear-gradient(to top, #ffffff 170px, transparent 170px), 
@@ -38,7 +40,7 @@
 
 .nutrition-program__text {
 	margin: 0;
-	margin-bottom: 23px;
+	margin-bottom: 28px;
 
 	font-size: 14px;
 	line-height: 14px;
@@ -74,6 +76,8 @@
 
 @media (min-width: $tablet-width) {
 	.nutrition-program {
+		margin-bottom: 0;
+
 		background-image: none;
 		background-color: transparent;
 	}
@@ -146,8 +150,9 @@
 		position: relative;
 
 		margin: 0 auto;
+		margin-bottom: 80px;
 		padding: 0 110px;
-		padding-bottom: 85px;
+		padding-bottom: 187px;
 		width: 1220px;
 	}
 
