@@ -111,6 +111,12 @@
 }
 
 @media (min-width: $tablet-width) {
+	.advantages {
+		padding-bottom: 55px;
+
+		border-bottom: 1px solid #e6e6e6;
+	}
+
 	.advantages__wrapper {
 		padding: 0 30px;
 	}
@@ -138,6 +144,11 @@
 		margin-bottom: 89px;
 		width: 325px;
 		min-height: 228px;
+
+		&:nth-last-child(1),
+		&:nth-last-child(2) {
+			margin-bottom: 0;
+		}
 		
 		&::before {
 			margin-bottom: 32px;
@@ -198,6 +209,12 @@
 }
 
 @media (min-width: $desktop-width) {
+	.advantages {
+		padding-bottom: 0;
+
+		border-bottom: none;
+	}
+
 	.advantages__wrapper {
 		margin: 0 auto;
 		padding: 0 110px;
@@ -215,6 +232,11 @@
 		margin-right: 80px;
 		margin-bottom: 40px;
 		width: 245px;
+
+		&:nth-last-child(1),
+		&:nth-last-child(2) {
+			margin-bottom: 40px;
+		}
 
 		&:nth-child(4n) {
 			margin-right: 0;
