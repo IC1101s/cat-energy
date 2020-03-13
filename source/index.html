@@ -197,7 +197,7 @@
 								<img class="result__img" 
 								 src="img/result/after-mobile@1x.png" 
 								 srcset="img/result/after-mobile@2x.png 2x"
-								 alt="Толстый кот">
+								 alt="Худой кот">
 							</picture>
 						</div>
 					</div>
@@ -213,8 +213,47 @@
 			</div>
 		</section>
 	</main>
+	
+	<!-- Page-Footer -->
+	<footer class="page-footer">
+		<!-- Map -->
+		<article class="map">
+			<h2 class="visually-hidden">Карта нашего местонахождения</h2>
+			<div class="map__address-wrapper">
+				<b class="map__text">Приглашаем к сотрудничеству дилеров!</b>
+				<p class="map__address">ул. Большая Конюшенная, д. 19/8 
+				<span class="map__address-city">Санкт-Петербург</span></p>
+			</div>
+			<div class="map__map-wrapper">
+				<picture>
+					<source type="image/webp" media="(min-width: 1440px)" 
+					 srcset="img/map/bg-map-desktop@1x.webp 1x, 
+					 	     img/map/bg-map-desktop@2x.webp 2x">
+					<source type="image/webp" media="(min-width: 768px)" 
+					 srcset="img/map/bg-map-tablet@1x.webp 1x,
+					 		 img/map/bg-map-tablet@2x.webp 2x"> 
+					<source type="image/webp" 
+					 srcset="img/map/bg-map-mobile@1x.webp 1x,
+					     	 img/map/bg-map-mobile@2x.webp 2x">
+					
+					<source media="(min-width: 1440px)" 
+					 srcset="img/map/bg-map-desktop@1x.png 1x,
+					 		 img/map/bg-map-desktop@2x.png 2x">
+					<source media="(min-width: 768px)" 
+					 srcset="img/map/bg-map-tablet@1x.png 1x,
+					 		 img/map/bg-map-tablet@2x.png 2x"> 
+					<img class="map__img" 
+					 src="img/map/bg-map-mobile@1x.png" 
+					 srcset="img/map/bg-map-mobile@2x.png 2x"
+					 alt="Толстый кот">
+				</picture>
+				<iframe class="map__google" src="https://www.google.com/maps/d/embed?mid=1z1i4GYIvePJXnou2iau4muaOZkEzprVx"  height="362" style="border:0;"></iframe>
+			</div>
+		</article>
+	</footer>
 
 	<script src="js/main-nav/main-nav.js"></script>
 	<script src="js/result/result.js"></script>
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDluwBfvy_M346vmyhvVLD62kK76nnVtss"></script> -->
 </body>
 </html>
