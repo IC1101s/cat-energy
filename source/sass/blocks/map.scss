@@ -86,17 +86,20 @@
 		position: relative;
 	}
 
+	.map__wrapper {
+		padding-left: calc((100vw - 1300px)/2 + 40px);
+	}
+
 	.map__address-wrapper {
 		position: absolute;
 		top: 95px;
-		left: 110px;
 		z-index: 2;
-
-		background-color: #ffffff;
 
 		align-items: flex-start;
 		padding-left: 77px;
 		padding-right: 90px;
+		
+		background-color: #ffffff;
 	}
 
 	.map__text {
