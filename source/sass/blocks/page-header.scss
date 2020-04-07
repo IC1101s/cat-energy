@@ -2,6 +2,17 @@
 	border-bottom: 1px solid #e6e6e6;
 }
 
+.page-header__logo[href] {
+
+	&:focus {
+		opacity: 0.8;
+	}
+
+	&:active {
+		opacity: 0.6;
+	}
+}
+
 .page-header__logo-image {
 	padding: 0 20px;
 	padding-top: 14px;
@@ -25,6 +36,17 @@
 		padding-top: 24px;
 
 		border-bottom: none;
+	}
+
+	.page-header__logo[href] {
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+		&:active {
+			opacity: 0.6;
+		}
 	}
 
 	.page-header__logo-image {
@@ -75,7 +97,7 @@
 			}
 		}
 	}
-
+	
 	.page-header__logo-image {
 		width: 202px;
 		height: 60px;
