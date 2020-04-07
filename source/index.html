@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Cat Energy</title>
+	<title>Cat Energy - Главная</title>
 	<link rel="stylesheet" href="css/style.min.css">
 	<script src="js/picturefill/picturefill.min.js"></script>
 </head>
@@ -31,7 +31,7 @@
 					<a>Главная</a>
 				</li>
 				<li class="site-list__item">
-					<a href="#catalog">Каталог продукции</a>
+					<a href="catalog.html">Каталог продукции</a>
 				</li>
 				<li class="site-list__item">
 					<a href="#program">Подбор программы</a>
@@ -42,7 +42,7 @@
 
 	<!-- Page-Main -->
 	<main class="page-main">	
-		<h1 class="visually-hidden">Cat Energy - сбалансированное питание для котов</h1>
+		<h1 class="visually-hidden">Cat Energy - еда для ваших котов</h1>
 
 		<!-- Nutrition-Program -->
 		<article class="nutrition-program">
@@ -217,7 +217,7 @@
 	<!-- Page-Footer -->
 	<footer class="page-footer">
 		<!-- Map -->
-		<article class="map">
+		<section class="map">
 			<h2 class="visually-hidden">Карта нашего местонахождения</h2>
 			<div class="map__wrapper">
 				<div class="map__address-wrapper">
@@ -251,17 +251,21 @@
 				</picture>
 				<iframe class="map__google" src="https://www.google.com/maps/d/embed?mid=1z1i4GYIvePJXnou2iau4muaOZkEzprVx"  height="362" style="border:0;"></iframe>
 			</div>
-		</article>
-
-		<div class="page-footer__wrapper">
-			<div class="page-footer__logo">
-				<a class="page-footer__img-link">
-					<img class="page-footer__img" src="img/page-footer/logo-footer.svg" width="128" height="24" 
+		</section>
+		
+		<!-- Footer-Nav -->
+		<section class="footer-nav">
+			<h2 class="visually-hidden">Дополнительная навигация</h2>
+			<!-- Footer-Nav__Logo -->
+			<div class="footer-nav__logo">
+				<a class="footer-nav__img-link">
+					<img class="footer-nav__img" src="img/footer-nav/logo-footer.svg" width="128" height="24" 
 					 alt="Логотип - Cat Energy">
 				</a>
 			</div>
-			<div class="page-footer__social">
-				<ul class="page-footer__social-list social-list">
+			<!-- Footer-Nav__Social -->
+			<div class="footer-nav__social">
+				<ul class="footer-nav__social-list social-list">
 					<li class="social-list__item">
 						<a class="social-list__link" href="https://vk.com/" target="_blank" title="Вконтакте">
 							<span class="visually-hidden">Вконтакте</span>
@@ -291,17 +295,18 @@
 					</li>
 				</ul>
 			</div>
-			<div class="page-footer__copyright">
-				<a class="page-footer__link-copyright" href="https://htmlacademy.ru/" target="_blank" 
+			<!-- Footer-Nav__Copyright -->
+			<div class="footer-nav__copyright">
+				<a class="footer-nav__link-copyright" href="https://htmlacademy.ru/" target="_blank" 
 				 title="HTML Academy">
-					<span class="page-footer__copyright-text">HTML Academy</span>
-					<svg class="page-footer__copyright-logo" role="img" aria-labelledby="copyright-footer" focusable="false"
+					<span class="footer-nav__copyright-text">HTML Academy</span>
+					<svg class="footer-nav__copyright-logo" role="img" aria-labelledby="copyright-footer" focusable="false"
 					 width="27" height="34">
 						<use class="social-list__htmlacademy" xlink:href="#htmlacademy"></use>
 					</svg>
 				</a>
 			</div>
-		</div>
+		</section>
 	</footer>
 
 	<script src="js/main-nav/main-nav.js"></script>
