@@ -1517,7 +1517,11 @@ input[type="radio"].visually-hidden {
     margin: 0;
     margin-top: auto;
     margin-bottom: 40px;
-    padding: 0 38px; } }
+    padding: 0 38px; }
+  .catalog__button:hover {
+    background-color: #5eaa2f; }
+  .catalog__button-still:hover {
+    background-color: #ebebeb; } }
 
 @media (min-width: 1440px) {
   .caralog__wrapper {
@@ -1540,11 +1544,7 @@ input[type="radio"].visually-hidden {
     .catalog__item:last-child {
       flex-direction: column;
       justify-content: center;
-      background-image: none; }
-  .catalog__button:hover {
-    background-color: #5eaa2f; }
-  .catalog__button-still:hover {
-    background-color: #ebebeb; } }
+      background-image: none; } }
 
 .additional__wrapper {
   padding: 0 20px; }
@@ -1709,6 +1709,10 @@ input[type="radio"].visually-hidden {
     line-height: 20px; }
   .additional__button {
     margin-bottom: 0; }
+    .additional__button:hover {
+      background-color: #5eaa2f; }
+    .additional__button:active {
+      color: rgba(255, 255, 255, 0.3); }
   .additional__stock {
     margin-bottom: 76px;
     min-height: 200px;
@@ -1786,8 +1790,4 @@ input[type="radio"].visually-hidden {
     .additional__stock-text::before {
       top: 65px;
       left: 50%;
-      transform: translateX(-50%) translateY(0); }
-  .additional__button:hover {
-    background-color: #5eaa2f; }
-  .additional__button:active {
-    color: rgba(255, 255, 255, 0.3); } }
+      transform: translateX(-50%) translateY(0); } }
