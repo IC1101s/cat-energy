@@ -61,7 +61,8 @@ input[type="radio"].visually-hidden {
 .button	{
 	display: inline-block;
 	padding: 10px 73px;
-
+	
+	font: inherit;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 400;
@@ -69,6 +70,8 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 	text-align: center;
 
+	border: none;
+	cursor: pointer;
 	vertical-align: middle;
 	background-color: #68b738;
 	
