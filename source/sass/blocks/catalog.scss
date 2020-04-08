@@ -328,6 +328,20 @@
 		margin-bottom: 40px;
 		padding: 0 38px;
 	}
+
+	.catalog__button {
+
+		&:hover {
+			background-color: #5eaa2f;
+		}
+	}
+
+	.catalog__button-still {
+		
+		&:hover {
+			background-color: #ebebeb;
+		}
+	}
 }
 
 @media (min-width: $desktop-width) {
@@ -366,20 +380,6 @@
 			justify-content: center;
 
 			background-image: none;
-		}
-	}
-
-	.catalog__button {
-
-		&:hover {
-			background-color: #5eaa2f;
-		}
-	}
-
-	.catalog__button-still {
-		
-		&:hover {
-			background-color: #ebebeb;
 		}
 	}
 }

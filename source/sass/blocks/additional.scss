@@ -236,6 +236,14 @@
 
 	.additional__button {
 		margin-bottom: 0;
+
+		&:hover {
+			background-color: #5eaa2f;
+		}
+
+		&:active {
+			color: rgba(255, 255, 255, 0.3);
+		}
 	}
 
 	.additional__stock {
@@ -365,17 +373,6 @@
 			left: 50%;
 
 			transform: translateX(-50%) translateY(0);
-		}
-	}
-
-	.additional__button {
-
-		&:hover {
-			background-color: #5eaa2f;
-		}
-
-		&:active {
-			color: rgba(255, 255, 255, 0.3);
 		}
 	}
 }
