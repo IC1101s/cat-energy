@@ -38,8 +38,8 @@
 		background-size: 50px;
 	}
 
-	&:nth-child(1) {
-
+	&--leaf {
+		
 		&::before {
 			background-image: 
 		  	  url("../img/advantages/advantage-leaf@1x.png");
@@ -53,7 +53,7 @@
 		}
 	}
 
-	&:nth-child(2) {
+	&--powder {
 
 		&::before {
 			background-image: 
@@ -68,7 +68,7 @@
 		}
 	}
 
-	&:nth-child(3) {
+	&--dining {
 
 		&::before {
 			background-image: 
@@ -83,7 +83,7 @@
 		}
 	}
 
-	&:nth-child(4) {
+	&--clock {
 
 		&::before {
 			background-image: 
@@ -170,28 +170,28 @@
 			transform: translateX(-55%);
 		}
 
-		&:nth-child(1) {
+		&--leaf {
 
 			&::after {
 				content: "1";
 			}
 		}
 
-		&:nth-child(2) {
+		&--powder {
 
 			&::after {
 				content: "2";
 			}
 		}
 
-		&:nth-child(3) {
+		&--dining {
 
 			&::after {
 				content: "3";
 			}
 		}
 
-		&:nth-child(4) {
+		&--clock {
 
 			&::after {
 				content: "4";
