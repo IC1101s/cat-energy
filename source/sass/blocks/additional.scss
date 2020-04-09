@@ -102,6 +102,10 @@
 	&:active {
 		color: rgba(255, 255, 255, 0.3);
 	}
+
+	transition-property: background-color, color;
+	transition-duration: 0.05s;
+	transition-timing-function: linear;
 }
 
 .additional__stock {
@@ -139,23 +143,26 @@
 	color: #ffffff; 
 	text-align: center;
 
-	&::before {
-		content: "";
+	&--gift {
 
-		position: absolute;
-		top: 65px;
-		left: 50%;
-		z-index: 1;
+		&::before {
+			content: "";
 
-		width: 55px;
-		height: 60px;
+			position: absolute;
+			top: 65px;
+			left: 50%;
+			z-index: 1;
 
-		background-image: 
-		  url("../img/additional/icon-gift.svg");
-		background-repeat: no-repeat;
-		background-position: 0 0;
+			width: 55px;
+			height: 60px;
 
-		transform: translateX(-50%);
+			background-image: 
+			  url("../img/additional/icon-gift.svg");
+			background-repeat: no-repeat;
+			background-position: 0 0;
+
+			transform: translateX(-50%);
+		}
 	}
 }
 
@@ -269,11 +276,14 @@
 
 		text-align: left;
 
-		&::before {
-			top: 50%;
-			left: 91px;
+		&--gift {
 
-			transform: translateX(0px) translateY(-50%);
+			&::before {
+				top: 50%;
+				left: 91px;
+
+				transform: translateX(0px) translateY(-50%);
+			}
 		}
 	}
 }
@@ -368,11 +378,14 @@
 
 		text-align: center;
 
-		&::before {
-			top: 65px;
-			left: 50%;
+		&--gift {
 
-			transform: translateX(-50%) translateY(0);
+			&::before {
+				top: 65px;
+				left: 50%;
+
+				transform: translateX(-50%) translateY(0);
+			}
 		}
 	}
 }
