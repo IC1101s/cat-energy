@@ -465,12 +465,12 @@ input[type="radio"].visually-hidden {
     background-position: 50%;
     transform: translateY(-50%); }
 
-.categories__item:nth-child(1) .categories__title::after {
+.categories__item--slim .categories__title::after {
   left: -20px;
   background-image: url("../img/categories/icon-cat-slim.svg");
   background-size: 35px 49px; }
 
-.categories__item:nth-child(2) .categories__title::after {
+.categories__item--pro .categories__title::after {
   left: -20px;
   background-image: url("../img/categories/icon-cat-pro.svg");
   background-size: 67px 28px; }
@@ -529,13 +529,13 @@ input[type="radio"].visually-hidden {
       height: 210px;
       background-repeat: no-repeat;
       background-position: 50%; }
-    .categories__item:nth-child(1)::before {
+    .categories__item--slim::before {
       top: 50%;
       right: 22px;
       background-image: url("../img/categories/icon-cat-slim.svg");
       background-size: 140px 194px;
       transform: translateY(-50%); }
-    .categories__item:nth-child(2)::before {
+    .categories__item--pro::before {
       top: 52%;
       right: 22px;
       background-image: url("../img/categories/icon-cat-pro.svg");
@@ -616,11 +616,11 @@ input[type="radio"].visually-hidden {
       display: block;
       width: 140px;
       height: 110px; }
-  .categories__item:nth-child(1) .categories__title::after {
+  .categories__item--slim .categories__title::after {
     left: -22px;
     background-image: url("../img/categories/icon-cat-slim.svg");
     background-size: 70px 97px; }
-  .categories__item:nth-child(2) .categories__title::after {
+  .categories__item--pro .categories__title::after {
     left: -22px;
     background-image: url("../img/categories/icon-cat-pro.svg");
     background-size: 134px 56px; }
@@ -663,25 +663,25 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 50px; }
-  .advantages__item:nth-child(1)::before {
+  .advantages__item--leaf::before {
     background-image: url("../img/advantages/advantage-leaf@1x.png"); }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      .advantages__item:nth-child(1)::before {
+      .advantages__item--leaf::before {
         background-image: url("../img/advantages/advantage-leaf@2x.png"); } }
-  .advantages__item:nth-child(2)::before {
+  .advantages__item--powder::before {
     background-image: url("../img/advantages/advantage-powder@1x.png"); }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      .advantages__item:nth-child(2)::before {
+      .advantages__item--powder::before {
         background-image: url("../img/advantages/advantage-powder@2x.png"); } }
-  .advantages__item:nth-child(3)::before {
+  .advantages__item--dining::before {
     background-image: url("../img/advantages/advantage-dining@1x.png"); }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      .advantages__item:nth-child(3)::before {
+      .advantages__item--dining::before {
         background-image: url("../img/advantages/advantage-dining@2x.png"); } }
-  .advantages__item:nth-child(4)::before {
+  .advantages__item--clock::before {
     background-image: url("../img/advantages/advantage-clock@1x.png"); }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      .advantages__item:nth-child(4)::before {
+      .advantages__item--clock::before {
         background-image: url("../img/advantages/advantage-clock@2x.png"); } }
 
 .advantages__description {
@@ -732,13 +732,13 @@ input[type="radio"].visually-hidden {
       font-weight: 400;
       color: #f2f2f2;
       transform: translateX(-55%); }
-    .advantages__item:nth-child(1)::after {
+    .advantages__item--leaf::after {
       content: "1"; }
-    .advantages__item:nth-child(2)::after {
+    .advantages__item--powder::after {
       content: "2"; }
-    .advantages__item:nth-child(3)::after {
+    .advantages__item--dining::after {
       content: "3"; }
-    .advantages__item:nth-child(4)::after {
+    .advantages__item--clock::after {
       content: "4"; }
   .advantages__description {
     padding-left: 0;
@@ -1329,7 +1329,9 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 12px;
   padding-top: 21px;
-  max-width: 80px;
+  max-width: 80px; }
+
+.catalog__name-link {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -1364,7 +1366,10 @@ input[type="radio"].visually-hidden {
   padding: 10px 20px;
   width: 100%;
   font-size: 16px;
-  line-height: 20px; }
+  line-height: 20px;
+  transition-property: background-color, color;
+  transition-duration: 0.05s;
+  transition-timing-function: linear; }
   .catalog__button:focus {
     background-color: #5eaa2f; }
   .catalog__button:active {
@@ -1420,7 +1425,10 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 20px;
   color: #444444;
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  transition-property: background-color, color;
+  transition-duration: 0.05s;
+  transition-timing-function: linear; }
   .catalog__button-still:focus {
     background-color: #ebebeb; }
   .catalog__button-still:active {
@@ -1459,12 +1467,22 @@ input[type="radio"].visually-hidden {
   .caralog__wrapper-item {
     display: block;
     padding: 0; }
+  .catalog__img-link:hover .catalog__img-small,
+  .catalog__img-link:hover .catalog__img-big, .catalog__img-link:focus .catalog__img-small,
+  .catalog__img-link:focus .catalog__img-big {
+    transform: scale(1.1); }
   .catalog__img-small {
     width: 324px;
-    height: 172px; }
+    height: 172px;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: linear; }
   .catalog__img-big {
     width: 324px;
-    height: 208px; }
+    height: 208px;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: linear; }
   .catalog__wrapper-specifications {
     flex-grow: 0;
     width: 100%;
@@ -1475,7 +1493,8 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
     margin-bottom: 20px;
     padding-top: 40px;
-    max-width: 130px;
+    max-width: 130px; }
+  .catalog__name-link {
     font-size: 20px; }
   .catalog__specifications {
     margin-bottom: 33px;
@@ -1504,6 +1523,10 @@ input[type="radio"].visually-hidden {
     .catalog__button-plus::before, .catalog__button-plus::after {
       width: 60px;
       background-color: #e6e6e6; }
+    .catalog__button-plus:hover::before, .catalog__button-plus:hover::after, .catalog__button-plus:focus::before, .catalog__button-plus:focus::after {
+      background-color: #d5d5d5; }
+    .catalog__button-plus:active::before, .catalog__button-plus:active::after {
+      background-color: rgba(213, 213, 213, 0.6); }
   .catalog__show {
     margin: 0 auto;
     margin-bottom: 20px;
@@ -1618,7 +1641,10 @@ input[type="radio"].visually-hidden {
   padding: 10px 20px;
   width: 100%;
   font-size: 16px;
-  line-height: 20px; }
+  line-height: 20px;
+  transition-property: background-color, color;
+  transition-duration: 0.05s;
+  transition-timing-function: linear; }
   .additional__button:focus {
     background-color: #5eaa2f; }
   .additional__button:active {
@@ -1649,7 +1675,7 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   color: #ffffff;
   text-align: center; }
-  .additional__stock-text::before {
+  .additional__stock-text--gift::before {
     content: "";
     position: absolute;
     top: 65px;
@@ -1728,7 +1754,7 @@ input[type="radio"].visually-hidden {
     padding-top: 70px;
     padding-bottom: 68px;
     text-align: left; }
-    .additional__stock-text::before {
+    .additional__stock-text--gift::before {
       top: 50%;
       left: 91px;
       transform: translateX(0px) translateY(-50%); } }
@@ -1787,7 +1813,7 @@ input[type="radio"].visually-hidden {
     padding-top: 188px;
     padding-bottom: 43px;
     text-align: center; }
-    .additional__stock-text::before {
+    .additional__stock-text--gift::before {
       top: 65px;
       left: 50%;
       transform: translateX(-50%) translateY(0); } }
