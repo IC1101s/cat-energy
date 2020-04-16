@@ -514,6 +514,8 @@
 	font-size: 16px;
 	line-height: 20px;
 
+	outline: 0;
+
 	&:focus {
 		background-color: #5eaa2f;
 	}
@@ -587,7 +589,7 @@
 		padding: 10px 19px;
 		
 		font-size: 20px;
-		line-height: 20px;
+		line-height: normal;
 
 		&:hover {
 			border-color: rgb(205, 205, 205);
@@ -683,7 +685,7 @@
 		padding-right: 50px;
 	 
 		font-size: 20px;
-		line-height: 20px;
+		line-height: normal;
 
 		&:hover {
 			border-color: rgb(205, 205, 205);
