@@ -26,12 +26,20 @@
 .social-list__link {
 	display: flex;
 	align-items: center;
+
+	transition-property: opacity;
+	transition-duration: 0.05s;
+	transition-timing-function: linear;
 }
 
 .social-list__vk,
 .social-list__insta,
 .social-list__fb {
 	fill: #666666;
+
+	transition-property: fill;
+	transition-duration: 0.1s;
+	transition-timing-function: linear;
 }
 
 .social-list__link:focus {
@@ -44,12 +52,7 @@
 }
 
 .social-list__link:active {
-
-	.social-list__vk,
-	.social-list__insta,
-	.social-list__fb {
-		fill: rgba(104, 183, 56, 0.3);
-	}
+	opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
