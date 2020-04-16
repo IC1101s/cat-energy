@@ -83,7 +83,6 @@
 	.footer-nav {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
 		padding: 0 30px;
 		padding-top: 60px;
 		padding-bottom: 62px;
@@ -91,6 +90,7 @@
 
 	.footer-nav__logo {
 		margin-bottom: 0;
+		margin-right: auto;
 
 		text-align: left;
 	}
@@ -109,6 +109,10 @@
 	.footer-nav__social {
 		margin-bottom: 0;
 		margin-left: 20px;
+	}
+
+	.footer-nav__copyright {
+		margin-left: auto;
 	}
 
 	.footer-nav__link-copyright {
