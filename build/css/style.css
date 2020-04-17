@@ -417,20 +417,15 @@ input[type="radio"].visually-hidden {
   padding-top: 14px;
   padding-bottom: 8px; }
 
-.page-header__logo-tablet {
-  display: none; }
-
-.page-header__logo-desktop {
-  display: none; }
-
 @media (min-width: 768px) {
   .page-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 0 30px;
     padding-top: 24px;
     border-bottom: none; }
+  .page-header__logo {
+    margin-right: auto; }
   .page-header__logo[href]:hover {
     opacity: 0.8; }
   .page-header__logo[href]:active {
@@ -470,11 +465,7 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1440px) {
   .page-header__logo-image {
     width: 202px;
-    height: 60px; }
-  .page-header__logo-tablet {
-    display: none; }
-  .page-header__logo-desktop {
-    display: block; } }
+    height: 60px; } }
 
 .main-nav__list {
   margin: 0;
