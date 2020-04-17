@@ -263,6 +263,7 @@
 	cursor: default;
 	outline: none;
 	border: 1px solid rgba(205, 205, 205, 0.5);
+	border-radius: 0;
 
 	box-sizing: border-box;
 
@@ -376,6 +377,7 @@
 	box-sizing: border-box;
 	resize: none;
 	border: 1px solid rgba(205, 205, 205, 0.5);
+	border-radius: 0;
 
 	transition-property: border-color, box-shadow;
 	transition-duration: 0.05s;
