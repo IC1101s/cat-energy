@@ -22,23 +22,18 @@
 	padding-bottom: 8px;
 }
 
-.page-header__logo-tablet {
-	display: none;
-}
-
-.page-header__logo-desktop {
-	display: none;
-}
-
 @media (min-width: $tablet-width) {
 	.page-header {
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
 		padding: 0 30px;
 		padding-top: 24px;
 
 		border-bottom: none;
+	}
+
+	.page-header__logo {
+		margin-right: auto;
 	}
 
 	.page-header__logo[href] {
@@ -104,13 +99,5 @@
 	.page-header__logo-image {
 		width: 202px;
 		height: 60px;
-	}
-
-	.page-header__logo-tablet {
-		display: none;
-	}
-
-	.page-header__logo-desktop {
-		display: block;
 	}
 }
