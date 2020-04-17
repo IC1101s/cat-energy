@@ -82,7 +82,6 @@
 @media (min-width: $tablet-width) {
 	.footer-nav {
 		display: flex;
-		align-items: center;
 		padding: 0 30px;
 		padding-top: 60px;
 		padding-bottom: 62px;
@@ -125,7 +124,7 @@
 	}
 
 	.footer-nav__copyright-logo {
-		padding-left: 23px;
+		margin-left: 23px;
 	}
 }
 
