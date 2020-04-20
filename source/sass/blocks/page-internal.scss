@@ -1,11 +1,5 @@
 @media (min-width: $desktop-width) {
 	.page-internal {
-		.page-header {
-
-			&::before {	
-				display: none;
-			}
-		}
 
 		.site-list__item {
 			position: relative;

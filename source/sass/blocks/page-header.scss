@@ -68,30 +68,33 @@
 		padding: 0 110px;
 		padding-top: 54px;
 		width: 1220px;
-
-		&::before {	
-			content: "";
+		
+		&--background {
 			
-			position: absolute;
-			top: 0;
-			right: 0;
-			z-index: -1;
+			&::before {	
+				content: "";
+				
+				position: absolute;
+				top: 0;
+				right: 0;
+				z-index: -1;
 
-			width: 50%;
-			height: 696px;
-			
-			background-color: #65a93c;
-			background-image: 
-			  url("../img/nutrition-program/index-background-desktop@1x.jpg");
-			background-repeat: no-repeat;
-			background-position: right 0;
-			background-size: 720px;
-
-			@media (min-resolution: $resolution-dpi),
-			       (min-resolution: $resolution-dppx) {
-
+				width: 50%;
+				height: 696px;
+				
+				background-color: #65a93c;
 				background-image: 
-			  	  url("../img/nutrition-program/index-background-desktop@2x.jpg");
+				  url("../img/nutrition-program/index-background-desktop@1x.jpg");
+				background-repeat: no-repeat;
+				background-position: right 0;
+				background-size: 720px;
+
+				@media (min-resolution: $resolution-dpi),
+				       (min-resolution: $resolution-dppx) {
+
+					background-image: 
+				  	  url("../img/nutrition-program/index-background-desktop@2x.jpg");
+				}
 			}
 		}
 	}
