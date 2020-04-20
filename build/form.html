@@ -5,6 +5,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cat Energy - Подбор программы</title>
+	<link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.min.css">
 	<script src="js/picturefill/picturefill.min.js"></script>
 </head>
@@ -117,7 +118,8 @@
 					<div class="program__wrapper-comments">
 						<fieldset class="program__fields-comments">
 							<legend class="program__comments-title">Комментарий</legend>
-							<textarea class="program__comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+							<label class="visually-hidden" for="comment-field">Напишите комментарий</label>
+							<textarea class="program__comment" name="comment" id="comment-field" placeholder="Расскажите обо всех повадках кота"></textarea>
 						</fieldset>
 					</div>
 					<!-- Additionally -->
