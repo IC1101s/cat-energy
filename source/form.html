@@ -50,57 +50,60 @@
 		<section class="program">
 			<div class="program__wrapper">
 				<h2 class="program__title">Подбор программы</h2>
-				<div class="programm__wrapper-form">
-					<p class="program__information">Заполните анкету и мы подберем программу питания для вашего кота</p>
-					<form class="program__form" action="https://echo.htmlacademy.ru" method="get">
-						<div class="program__container-fieldset">
-							<!-- Information -->
-							<fieldset class="program__fields-information">
-								<legend class="visually-hidden">Ваши данные:</legend>
-								<p class="program__field-information">
-									<label class="program__information-label" for="name-field">Имя:<span>*</span></label>
-									<input class="program__information-input" type="text" name="name" id="name-field" 
-									 placeholder="Барсик" autocomplete="off" required>
-								</p>
-								<p class="program__field-information">
-									<label class="program__information-label" for="weight-field">Вес (кг):<span>*</span></label>
-									<input class="program__information-input" type="text" name="weight" id="weight-field" 
-									 placeholder="7" autocomplete="off" required>
-								</p>
-								<p class="program__field-information">
-									<label class="program__information-label" for="age-field">Возраст (лет):</label>
-									<input class="program__information-input" type="text" name="age" id="age-field" 
-									 placeholder="7" autocomplete="off">
-								</p>
-							</fieldset>
-							<!-- Program -->
-							<fieldset class="program__fields-program">
-								<legend class="visually-hidden">Программа:</legend>
-								<ul class="program__program-list">
-									<li class="program__field-program">
-										<input class="program__program-input visually-hidden" type="radio" name="program" 
-										 value="losing-weight" id="losing-weight" checked>
-										<label class="program__program-label" for="losing-weight">Похудение</label>
-									</li>
-									<li class="program__field-program">
-										<input class="program__program-input visually-hidden" type="radio" name="program" 
-										 value="mass-gain" id="mass-gain">
-										<label class="program__program-label" for="mass-gain">Набор массы</label>
-									</li>
-									<li class="program__field-program">
-										<input class="program__program-input visually-hidden" type="radio" name="program" 
-										 value="need-advice" id="need-advice">
-										<label class="program__program-label" for="need-advice">Не знаю (нужен ваш совет)</label>
-									</li>
-								</ul>
-							</fieldset>
-						</div>
-						<!-- Contacts -->
+				<p class="program__information">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
+				<form class="program__form" action="https://echo.htmlacademy.ru" method="get">
+					<div class="program__wrapper-information-program">
+						<!-- Information -->
+						<fieldset class="program__fields-information">
+							<legend class="visually-hidden">Ваши данные:</legend>
+							<p class="program__field-information">
+								<label class="program__information-label" for="name-field">Имя:<span>*</span>
+								</label>
+								<input class="program__information-input" type="text" name="name" id="name-field" 
+								 placeholder="Барсик" autocomplete="off" required>
+							</p>
+							<p class="program__field-information">
+								<label class="program__information-label" for="weight-field">Вес (кг):<span>*</span>
+								</label>
+								<input class="program__information-input" type="text" name="weight" id="weight-field" 
+								 placeholder="7" autocomplete="off" required>
+							</p>
+							<p class="program__field-information">
+								<label class="program__information-label" for="age-field">Возраст (лет):</label>
+								<input class="program__information-input" type="text" name="age" id="age-field" 
+								 placeholder="7" autocomplete="off">
+							</p>
+						</fieldset>
+						<!-- Program -->
+						<fieldset class="program__fields-program">
+							<legend class="visually-hidden">Программа:</legend>
+							<ul class="program__program-list">
+								<li class="program__field-program">
+									<input class="program__program-input visually-hidden" type="radio" name="program" 
+									 value="losing-weight" id="losing-weight" checked>
+									<label class="program__program-label" for="losing-weight">Похудение</label>
+								</li>
+								<li class="program__field-program">
+									<input class="program__program-input visually-hidden" type="radio" name="program" 
+									 value="mass-gain" id="mass-gain">
+									<label class="program__program-label" for="mass-gain">Набор массы</label>
+								</li>
+								<li class="program__field-program">
+									<input class="program__program-input visually-hidden" type="radio" name="program" 
+									 value="need-advice" id="need-advice">
+									<label class="program__program-label" for="need-advice">Не знаю (нужен ваш совет)</label>
+								</li>
+							</ul>
+						</fieldset>
+					</div>
+					<!-- Contacts -->
+					<div class="program__wrapper-contacts">
 						<fieldset class="program__fields-contacts">
 							<legend class="program__contacts-title">Контактные данные (владельца кота)</legend>
 							<div class="program__container-contacts">
 								<p class="program__field-contacts">	
-									<label class="program__contacts-label" for="mail-field">E-mail:<span>*</span></label>
+									<label class="program__contacts-label" for="mail-field">E-mail:<span>*</span>
+									</label>
 									<input class="program__contacts-input" type="email" name="mail" 
 									 id="mail-field" placeholder="kuklachev@gmail.com" required>
 									<svg class="program__icon program__icon--mail" width="17" height="13">
@@ -108,7 +111,8 @@
 									</svg>
 								</p>
 								<p class="program__field-contacts">
-									<label class="program__contacts-label" for="tel-field">Телефон:<span>*</span></label>
+									<label class="program__contacts-label" for="tel-field">Телефон:<span>*</span>
+									</label>
 									<input class="program__contacts-input" type="tel" name="tel" 
 									 id="tel-field" pattern="[8] [0-9]{3} [0-9]{3}-[0-9]{2}-[0-9]{2}" 
 									 placeholder="8 (960) 900-60-90" required>
@@ -118,44 +122,52 @@
 								</p>
 							</div>
 						</fieldset>
-						<!-- Comment -->
+					</div>
+					<!-- Comment -->
+					<div class="program__wrapper-comments">
 						<fieldset class="program__fields-comments">
 							<legend class="program__comments-title">Комментарий</legend>
 							<textarea class="program__comment" name="comment" 
 							 placeholder="Расскажите обо всех повадках кота"></textarea>
 						</fieldset>
-						<!-- Additionally -->
+					</div>
+					<!-- Additionally -->
+					<div class="program__wrapper-additionally">
 						<fieldset class="program__fields-additionally">
 							<legend class="program__additionally-title">Дополнительно</legend>
 							<ul class="program__additionally-list">
 								<li class="program__additionally-item">
 									<input class="program__additionally-input visually-hidden" type="checkbox" 
 									 name="sweetener" id="sweetener-field" checked>
-									<label class="program__additionally-label" for="sweetener-field">Сахарозаменитель</label>
+									<label class="program__additionally-label" for="sweetener-field">Сахарозаменитель
+									</label>
 								</li>
 								<li class="program__additionally-item">
 									<input class="program__additionally-input visually-hidden" type="checkbox" 
 									 name="water" id="water-field">
-									<label class="program__additionally-label" for="water-field">Питьевая вода</label>
+									<label class="program__additionally-label" for="water-field">Питьевая вода
+									</label>
 								</li>
 								<li class="program__additionally-item">
 									<input class="program__additionally-input visually-hidden" type="checkbox" 
 									 name="milk" id="milk-field">
-									<label class="program__additionally-label" for="milk-field">Молоко</label>
+									<label class="program__additionally-label" for="milk-field">Молоко
+									</label>
 								</li>
 								<li class="program__additionally-item">
 									<input class="program__additionally-input visually-hidden" type="checkbox" 
 									 name="vitamins" id="vitamins-field">
-									<label class="program__additionally-label" for="vitamins-field">Витамины</label>
+									<label class="program__additionally-label" for="vitamins-field">Витамины
+									</label>
 								</li>
 							</ul>
 						</fieldset>
-						<div class="program__wrapper-distributor">
-							<button class="program__submit button" type="submit">Отправить заявку</button>
-							<p class="program__necessarily">* — Обязательные поля</p>
-						</div>
-					</form>
-				</div>
+					</div>
+					<div class="program__wrapper-distributor">
+						<button class="program__submit button" type="submit">Отправить заявку</button>
+						<p class="program__necessarily">* — Обязательные поля</p>
+					</div>
+				</form>
 			</div>
 		</section>
 	</main>
