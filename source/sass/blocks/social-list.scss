@@ -1,5 +1,4 @@
 .social-list {
-	padding: 0 73px;
 	padding-top: 26px;
 	padding-bottom: 21px;
 	
@@ -34,7 +33,9 @@
 
 .social-list__vk,
 .social-list__insta,
-.social-list__fb {
+.social-list__fb,
+.social-list__twitter,
+.social-list__gmail {
 	fill: #666666;
 
 	transition-property: fill;
@@ -42,12 +43,26 @@
 	transition-timing-function: linear;
 }
 
-.social-list__link:focus {
+.social-list__github {
+	fill: none;
+	stroke: #666666;
 
+	transition-property: stroke;
+	transition-duration: 0.1s;
+	transition-timing-function: linear;
+}
+
+.social-list__link:focus {
 	.social-list__vk,
 	.social-list__insta,
-	.social-list__fb {
+	.social-list__fb,
+	.social-list__twitter,
+	.social-list__gmail {
 		fill: #68b738;
+	}
+
+	.social-list__github {
+		stroke: #68b738;
 	}
 }
 
@@ -58,7 +73,7 @@
 @media (min-width: $tablet-width) {
 	.social-list {
 		padding: 0;
-		width: 124px;
+		// width: 124px;
 
 		text-align: center;
 
@@ -84,12 +99,32 @@
 		height: 28px;
 	}
 
-	.social-list__link:hover {
+	.social-list__logo-twitter {
+		width: 25px;
+		height: 25px;
+	}
 
+	.social-list__logo-github {
+		width: 25px;
+		height: 25px;
+	}
+
+ .social-list__logo-gmail {
+		width: 30px;
+		height: 30px;
+	}
+
+	.social-list__link:hover {
 		.social-list__vk,
 		.social-list__insta,
-		.social-list__fb {
+		.social-list__fb,
+		.social-list__twitter,
+		.social-list__gmail {
 			fill: #68b738;
+		}
+
+		.social-list__github {
+			stroke: #68b738;
 		}
 	}
 }

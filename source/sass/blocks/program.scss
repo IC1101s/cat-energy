@@ -8,7 +8,7 @@
 	padding-top: 15px;
 
 	font-size: 36px;
-	line-height: 60px;
+	line-height: 40px;
 	font-weight: 400;
 	color: #111111; 
 }
@@ -201,7 +201,7 @@
 		right: -20px;
 		z-index: 1;
 
-		width: calc(100vw - 221px);
+		width: calc(100vw - 250px);
 		height: 3px;
 
 		background-color: #68b738;
@@ -218,7 +218,7 @@
 .program__contacts-title {	
 	padding: 0;
 	margin-bottom: 33px;
-	max-width: 185px;
+	max-width: 220px;
 
 	font-size: 24px;
 	line-height: 24px;
@@ -342,7 +342,7 @@
 		right: -20px;
 		z-index: 1;
 
-		width: calc(100vw - 162px);
+		width: calc(100vw - 140px);
 		height: 3px;
 
 		background-color: #68b738;
@@ -409,7 +409,7 @@
 		right: -20px;
 		z-index: 1;
 
-		width: calc(100vw - 184px);
+		width: calc(100vw - 145px);
 		height: 3px;
 
 		background-color: #68b738;
@@ -692,10 +692,14 @@
 
 	.program__contacts-title {	
 		margin-bottom: 75px;
-		max-width: 515px;
+		max-width: 530px;
 
 		font-size: 36px;
 		line-height: 36px; 
+
+		br {
+			display: none;
+		}
 	}
 
 	.program__field-contacts {
@@ -760,7 +764,7 @@
 			top: 22px;
 			right: 0;
 
-			width: calc(50vw + 95px);
+			width: calc(50vw + 135px);
 		}
 	}
 
@@ -816,7 +820,7 @@
 			top: 22px;
 			right: 0;
 
-			width: calc(50vw + 62px);
+			width: calc(50vw + 130px);
 		}
 	}
 
@@ -1009,7 +1013,7 @@
 		}
 
 		&::after {
-			width: calc(50vw + 391px);
+			width: calc(50vw + 425px);
 		}
 	}
 
@@ -1030,7 +1034,7 @@
 		}
 
 		&::after {
-			width: calc(50vw + 358px);
+			width: calc(50vw + 420px);
 		}
 	}
 
