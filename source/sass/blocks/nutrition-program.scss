@@ -163,12 +163,15 @@
 	}
 
 	.nutrition-program__title {
+		max-width: 340px;
 		margin: 0;
 		margin-bottom: 41px;
 		padding: 0;
 	}
 
 	.nutrition-program__text {
+		width: 270px;
+		line-height: 23px;
 		margin: 0;
 		margin-bottom: 52px;
 	}
